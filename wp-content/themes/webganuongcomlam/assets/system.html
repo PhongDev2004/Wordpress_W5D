@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="header-top sticky-top">
+            <div class="container-xl">
+                <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-3">
+                    <div class="col p-3 d-flex align-items-center">
+                        <div class="logo-top">
+                            <img src="./images/home/log.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="col p-3 d-flex align-items-center">
+                        <div class="brand">
+                            <h3 class="brand-title text-center text-white text-uppercase">Gà nướng cơm lam</h3>
+                            <h1 class="brand-name text-center text-white">Ngọc Lan @</h1>
+                        </div>
+                    </div>
+                    <div class="col p-3 d-flex align-items-center justify-content-center">
+                        <div class="slogan">
+                            <p class="fs-4 fw-bold text-center"><span class="fs-3 text-uppercase">Thơm</span> từ
+                                cánh
+                                tới chân,</p>
+                            <p class="fs-4 fw-bold text-center"><span class="fs-3 text-uppercase">Ngọt</span> từ
+                                thân
+                                đến đùi !</p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-lg-3 col-md-auto text-lg-center text-md-center p-3 d-flex align-items-center justify-content-end">
+                        <div class="cart">
+                            <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                            <p class="mt-3 text-white fs-5 text-uppercase">Hotline: 1900252583</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-header container-xl menu-top">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav w-100 justify-content-between nav-menu">
+                            <li class="nav-item nav-list">
+                                <a class="nav-link fs-4 text-primary text-uppercase" aria-current="page" href="#">Trang
+                                    chủ</a>
+                            </li>
+                            <li class="nav-item nav-list">
+                                <a class="nav-link fs-4 text-primary text-uppercase" href="#">Giới thiệu</a>
+                            </li>
+                            <li class="nav-item nav-list">
+                                <a class="nav-link fs-4 text-primary text-uppercase" href="#">Sản phẩm</a>
+                            </li>
+                            <li class="nav-item nav-list">
+                                <a class="nav-link fs-4 text-primary text-uppercase" href="#">Tin tức</a>
+                            </li>
+                            <li class="nav-item nav-list">
+                                <a class="nav-link fs-4 text-primary text-uppercase" href="#">Nhượng quyền</a>
+                            </li>
+                            <li class="nav-item nav-list">
+                                <a class="nav-link fs-4 text-primary text-uppercase" href="#">Tuyển dụng</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main" id="main">
+        <section class="system-store mb-3">
+            <div class="container-xl">
+                <div class="system-store-all pb-4">
+                    <div class="system-store-title pb-4">
+                        <a class="text-uppercase fs-3 fw-bold d-flex justify-content-center" href="#">
+                            Hệ thống cửa hàng Ngọc Lan @
+                        </a>
+                    </div>
+
+                    <div class="system-store-content">
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col pb-3">
+                                <div class="card border-0">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="name-address">
+                                            <p class="fs-5 text-danger"><i
+                                                    class="fa-solid fa-location-dot pe-2 fs-5 text-warning"></i>Cửa hàng
+                                                gần bạn nhất
+                                            </p>
+                                        </div>
+                                        <div class="search-address">
+                                            <form action="#">
+                                                <input class="stext" type="text" name="search"
+                                                    placeholder="Tìm kiếm cửa hàng theo khu vực...">
+                                                <button type="submit">
+                                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body w-100 rounded info-store">
+                                        <h5 class="card-title text-center text-danger">Thông báo việc tạm nhưng hoạt
+                                            động ở cơ sở 1
+                                        </h5>
+                                        <ul class="list-info">
+                                            <li class="list-info-item"><span class="fw-bold">Gián đoạn tạm thời:</span>
+                                                Có thể xảy ra gián đoạn tạm
+                                                thời trong hoạt động của nền tảng trong quá trình thử nghiệm.</li>
+                                            <li class="list-info-item"><span class="fw-bold">Thay đổi giao diện và chức
+                                                    năng:</span> Đôi khi, giao
+                                                diện và chức năng của nền tảng có thể thay đổi để phản ánh các cải tiến
+                                                và sửa đổi được thực hiện.</li>
+                                            <li class="list-info-item"><span class="fw-bold">Góp ý và Phản Hồi:</span>
+                                                Chúng tôi rất hoan nghênh mọi
+                                                góp ý và phản hồi từ bạn trong quá trình này.</li>
+                                            <li class="list-info-item"><span class="fw-bold">Đáp ứng với phản hồi của
+                                                    cộng đồng:</span> Phản hồi từ
+                                                bạn là vô cùng quan trọng đối với chúng tôi.</li>
+                                            <li class="list-info-item"><span class="fw-bold">Kiểm tra và sửa đổi tính
+                                                    năng:</span> Chúng tôi sẽ kiểm
+                                                tra và sửa đổi các tính năng hiện có để đảm bảo tính hoạt động ổn định
+                                                và hiệu quả nhất cho bạn.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card border-0 w-100 h-100">
+                                    <iframe class="map-iframe"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.915172799875!2d105.80277597584139!3d21.03607988752603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abf7092901a9%3A0xe8f0b7e262bf085c!2zR8OhYyBC4bq_cC0gR8OgIE7GsOG7m25nIEPGoW0gTGFt!5e0!3m2!1svi!2s!4v1706879845256!5m2!1svi!2s"
+                                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="system-store-one pt-3 pb-4">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center text-uppercase fw-bold text-danger">Cửa hàng số 01
+                                    </h5>
+                                    <p class="card-text text-center text-uppercase">Địa chỉ: 34 đường Cộng Hòa, Tân
+                                        Bình, TP.HCM</p>
+                                    <div class="info d-flex justify-content-between">
+                                        <p class="text-uppercase fw-bold"><i class="fa-solid fa-phone-volume"></i>
+                                            0978.262.565
+                                        </p>
+                                        <p class="text-uppercase fw-bold"><i class="fa-solid fa-bag-shopping"></i> Đặt
+                                            hàng
+                                            online</p>
+                                    </div>
+                                    <div class="info-img d-flex justify-content-between w-100">
+                                        <img src="./images/contact/img-1.jpg" alt="img">
+                                        <img src="./images/contact/img-2.png" alt="img">
+                                        <img src="./images/contact/img-3.jpeg" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card border-0 w-100 h-100">
+                                <iframe class="map-iframe"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.915172799875!2d105.80277597584139!3d21.03607988752603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abf7092901a9%3A0xe8f0b7e262bf085c!2zR8OhYyBC4bq_cC0gR8OgIE7GsOG7m25nIEPGoW0gTGFt!5e0!3m2!1svi!2s!4v1706879845256!5m2!1svi!2s"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="system-store-one pt-3 pb-4">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center text-uppercase fw-bold text-danger">Cửa hàng số 02
+                                    </h5>
+                                    <p class="card-text text-center text-uppercase">Địa chỉ: 42 Ngã 3 Mĩ Hạnh, Long An
+                                    </p>
+                                    <div class="info d-flex justify-content-between">
+                                        <p class="text-uppercase fw-bold"><i class="fa-solid fa-phone-volume"></i>
+                                            0978.262.565
+                                        </p>
+                                        <p class="text-uppercase fw-bold"><i class="fa-solid fa-bag-shopping"></i> Đặt
+                                            hàng
+                                            online</p>
+                                    </div>
+                                    <div class="info-img d-flex justify-content-between pb-3">
+                                        <img src="./images/contact/img-4.jpg" alt="img">
+                                        <img src="./images/contact/img-5.jpg" alt="img">
+                                        <img src="./images/contact/img-6.png" alt="img">
+                                    </div>
+                                    <p class="card-text text-danger fs-4"><i class="fa-brands fa-salesforce"></i>
+                                        Đang
+                                        có chương trình khuyến mãi riêng</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card border-0 w-100 h-100">
+                                <iframe class="map-iframe"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.915172799875!2d105.80277597584139!3d21.03607988752603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abf7092901a9%3A0xe8f0b7e262bf085c!2zR8OhYyBC4bq_cC0gR8OgIE7GsOG7m25nIEPGoW0gTGFt!5e0!3m2!1svi!2s!4v1706879845256!5m2!1svi!2s"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="system-store-one pt-3 pb-4">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center text-uppercase fw-bold text-danger">Cửa hàng số 03
+                                    </h5>
+                                    <p class="card-text text-center text-uppercase">Địa chỉ: 56 Nam Kì khởi nghĩa,
+                                        TP.HCM</p>
+                                    <div class="info d-flex justify-content-between">
+                                        <p class="text-uppercase fw-bold"><i class="fa-solid fa-phone-volume"></i>
+                                            0978.262.565
+                                        </p>
+                                        <p class="text-uppercase fw-bold"><i class="fa-solid fa-bag-shopping"></i> Đặt
+                                            hàng
+                                            online</p>
+                                    </div>
+                                    <div class="info-img d-flex justify-content-between">
+                                        <img src="./images/contact/img-1.jpg" alt="img">
+                                        <img src="./images/contact/img-2.png" alt="img">
+                                        <img src="./images/contact/img-3.jpeg" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card border-0 w-100 h-100">
+                                <iframe class="map-iframe"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.915172799875!2d105.80277597584139!3d21.03607988752603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abf7092901a9%3A0xe8f0b7e262bf085c!2zR8OhYyBC4bq_cC0gR8OgIE7GsOG7m25nIEPGoW0gTGFt!5e0!3m2!1svi!2s!4v1706879845256!5m2!1svi!2s"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="system-store-one pt-3 pb-4">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center text-uppercase fw-bold text-danger">Cửa hàng số 04
+                                    </h5>
+                                    <p class="card-text text-center text-uppercase">Địa chỉ: 34 đường Cộng Hòa, Tân
+                                        Bình, TP.HCM</p>
+                                    <div class="info d-flex justify-content-between">
+                                        <p class="text-uppercase fw-bold"><i class="fa-solid fa-phone-volume"></i>
+                                            0978.262.565
+                                        </p>
+                                        <p class="text-uppercase fw-bold"><i class="fa-solid fa-bag-shopping"></i> Đặt
+                                            hàng
+                                            online</p>
+                                    </div>
+                                    <div class="info-img d-flex justify-content-between">
+                                        <img src="./images/contact/img-4.jpg" alt="img">
+                                        <img src="./images/contact/img-5.jpg" alt="img">
+                                        <img src="./images/contact/img-6.png" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card border-0 w-100 h-100">
+                                <iframe class="map-iframe"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.915172799875!2d105.80277597584139!3d21.03607988752603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abf7092901a9%3A0xe8f0b7e262bf085c!2zR8OhYyBC4bq_cC0gR8OgIE7GsOG7m25nIEPGoW0gTGFt!5e0!3m2!1svi!2s!4v1706879845256!5m2!1svi!2s"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="system-store-one pt-3 pb-4">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center text-uppercase fw-bold text-danger">Cửa hàng số 05
+                                    </h5>
+                                    <p class="card-text text-center text-uppercase">Địa chỉ: 34 đường Cộng Hòa, Tân
+                                        Bình, TP.HCM</p>
+                                    <div class="info d-flex justify-content-between">
+                                        <p class="text-uppercase fw-bold"><i class="fa-solid fa-phone-volume"></i>
+                                            0978.262.565
+                                        </p>
+                                        <p class="text-uppercase fw-bold"><i class="fa-solid fa-bag-shopping"></i> Đặt
+                                            hàng
+                                            online</p>
+                                    </div>
+                                    <div class="info-img d-flex justify-content-between">
+                                        <img src="./images/contact/img-1.jpg" alt="img">
+                                        <img src="./images/contact/img-2.png" alt="img">
+                                        <img src="./images/contact/img-3.jpeg" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card border-0 w-100 h-100">
+                                <iframe class="map-iframe"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.915172799875!2d105.80277597584139!3d21.03607988752603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abf7092901a9%3A0xe8f0b7e262bf085c!2zR8OhYyBC4bq_cC0gR8OgIE7GsOG7m25nIEPGoW0gTGFt!5e0!3m2!1svi!2s!4v1706879845256!5m2!1svi!2s"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="nice-video mt-4">
+            <div class="container-xl">
+                <div class="row row-cols-1 row-cols-md-3 g-4 pb-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="ratio ratio-16x9">
+                                <iframe width="1236" height="695" src="https://www.youtube.com/embed/ngaWzaNDKks"
+                                    title="Đặc Sản Tây Nguyên GÀ NƯỚNG VÀ CƠM LAM Bằng Nồi Chiên Không Dầu-THƠM NGON và DỄ LÀM"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="ratio ratio-16x9">
+                            <iframe width="1236" height="695" src="https://www.youtube.com/embed/dtck5AitLCY"
+                                title="Thiên đường ẩm thực 6 | Tập 1: Cơm lam gà sa lửa" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="ratio ratio-16x9">
+                                <iframe width="1236" height="695" src="https://www.youtube.com/embed/ngaWzaNDKks"
+                                    title="Đặc Sản Tây Nguyên GÀ NƯỚNG VÀ CƠM LAM Bằng Nồi Chiên Không Dầu-THƠM NGON và DỄ LÀM"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-main">
+        <div class="footer pb-3">
+            <div class="container-xl">
+                <div class="row row-cols-2 row-cols-md-4 g-4 pt-4">
+                    <div class="col">
+                        <div class="h-100">
+                            <h5 class="card-title fs-4 fw-bold">Về chúng tôi</h5>
+                            <div class="card-body p-0 pe-3">
+                                <div>
+                                    <p class="card-text fs-5">Hệ thống cơm lam Ngọc Lan @ là hệ thống uy tín nhất tại
+                                        Việt
+                                        Nam.</p>
+                                    <ul class="group-list">
+                                        <li class="fs-6">Nhãn hiệu thuộc Co-Food Việt Nam</li>
+                                        <li class="fs-6">Chi nhánh miền Nam</li>
+                                        <li class="fs-6">Chi nhánh miền Bắc</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="h-100">
+                            <div class="card-body pt-4">
+                                <ul class="list-unstyled">
+                                    <li class="fs-5 text-danger fw-bold pb-2 text-uppercase">Trang chủ</li>
+                                    <li class="fs-5 text-danger fw-bold pb-2 text-uppercase">Giới thiệu</li>
+                                    <li class="fs-5 text-danger fw-bold pb-2 text-uppercase">Sản phẩm</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="h-100">
+                            <div class="card-body pt-4">
+                                <ul class="list-unstyled">
+                                    <li class="fs-5 text-danger fw-bold pb-2 text-uppercase">Tin tức</li>
+                                    <li class="fs-5 text-danger fw-bold pb-2 text-uppercase">Nhượng quyền</li>
+                                    <li class="fs-5 text-danger fw-bold pb-2 text-uppercase">Tuyển dụng</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="h-100">
+                            <div class="card-body pt-2">
+                                <div class="ratio ratio-16x9 w-100 h-100 pt-4">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.915172799875!2d105.80277597584139!3d21.03607988752603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abf7092901a9%3A0xe8f0b7e262bf085c!2zR8OhYyBC4bq_cC0gR8OgIE7GsOG7m25nIEPGoW0gTGFt!5e0!3m2!1svi!2s!4v1706753394297!5m2!1svi!2s"
+                                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="license">
+                    <p class="text-center text-uppercase fs-5 text-primary">Bản quyền thuộc về công ty Co-Food Việt Nam
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-contact pt-3">
+            <div class="container-xl">
+                <div class="row row-cols-2 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card-body d-flex align-items-center">
+                            <p class="card-text fs-1 pe-3 text-success"><i class="fa-solid fa-phone-volume"></i></p>
+                            <h5 class="card-title text-white text-uppercase text-center">1900252583</h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-body d-flex">
+                            <p class="card-text fs-1 pe-3 "><i class="fa-brands fa-youtube"></i></p>
+                            <h5 class="card-title text-white text-uppercase text-center">Gà nướng cơm lam Ngọc Lan @
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-body d-flex">
+                            <p class="card-text fs-1 pe-3"><i class="fa-brands fa-tiktok"></i></p>
+                            <h5 class="card-title text-white text-uppercase text-center">Gà nướng cơm lam Ngọc Lan @
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card-body d-flex">
+                            <p class="card-text fs-1 pe-3 text-primary"><i class="fa-brands fa-facebook"></i></p>
+                            <h5 class="card-title text-white text-uppercase text-center">Gà nướng cơm lam Ngọc Lan @
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,377 @@
+/* Import font từ Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap');
+
+:root {
+    --bg-header-top: rgb(217, 34, 36);
+    --carousel-next-prev: rgb(243, 94, 50);
+    --yellow: rgb(255, 255, 0);
+
+    --first-color: hsl(38, 92%, 58%);
+    --first-color-light: hsl(38, 100%, 78%);
+    --first-color-alt: hsl(32, 75%, 50%);
+    --second-color: hsl(195, 75%, 52%);
+    --dark-color: hsl(212, 40%, 12%);
+    --white-color: hsl(212, 4%, 95%);
+    --body-color: hsl(212, 42%, 15%);
+    --container-color: hsl(212, 42%, 20%);
+    --title-system: rgb(37, 95, 125);
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Bai Jamjuree", sans-serif;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+}
+
+a,
+ul,
+li {
+    text-align: #000;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.header .header-top {
+    background-color: var(--bg-header-top);
+}
+
+.cart i {
+    font-size: 40px;
+    color: var(--yellow);
+}
+
+.brand .brand-title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.brand .brand-name {
+    font-family: "Pacifico", cursive;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.slogan p {
+    color: var(--yellow);
+}
+
+.nav-menu .nav-list>a {
+    font-weight: 500;
+    transition: color 0.6 ease;
+}
+
+.nav-menu .nav-list:hover>a {
+    color: #000 !important;
+}
+
+.banner-img img {
+    height: 60vh;
+    object-fit: cover;
+}
+
+.pre-left .icon-pre-left {
+    font-size: 4rem;
+    color: var(--carousel-next-prev);
+}
+
+
+.next-right .icon-next-right {
+    font-size: 4rem;
+    color: var(--carousel-next-prev);
+}
+
+.events .title-event {
+    font-family: "Pacifico", cursive;
+    font-weight: 800;
+    font-style: normal;
+    color: var(--bg-header-top);
+}
+
+.title-content h3 {
+    color: var(--bg-header-top);
+}
+
+.card-content {
+    position: relative;
+    cursor: pointer;
+}
+
+.card-content::before {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background: none;
+    top: 0;
+    left: 0;
+    transform: translate(15px, 15px);
+    border-top: 5px solid #f1c40f;
+    border-left: 5px solid #f1c40f;
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+}
+
+.card-content::after {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    background: none;
+    bottom: 0;
+    right: 0;
+    transform: translate(-15px, -15px);
+    border-bottom: 5px solid #f1c40f;
+    border-right: 5px solid #f1c40f;
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+}
+
+.card-content:hover:before,
+.card-content:hover::after {
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+}
+
+.card-body .card-content-item p {
+    color: var(--bg-header-top);
+    transition: all 0.2s ease-in-out;
+}
+
+.card-content:hover .card-content-title .card-body .card-content-item p {
+    transform: scale(1.1);
+}
+
+.media-content-img img {
+    width: 400px;
+    height: 200px;
+}
+
+.footer-contact {
+    background-color: var(--bg-header-top);
+}
+
+
+/* Swiper */
+/*=============== CARD ===============*/
+.card__content {
+    margin-inline: 1.75rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+.card__article {
+    width: 300px;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+.card__images {
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+.card__img-event {
+    width: 500px;
+    height: 260px;
+    object-fit: cover;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    content: "";
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    width: initial;
+    height: initial;
+    font-size: 3rem;
+    color: var(--carousel-next-prev);
+    display: none;
+}
+
+.swiper-button-prev {
+    left: 0;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.card__image {
+    position: relative;
+    background-color: var(--first-color-light);
+    padding-top: 1.5rem;
+    margin-bottom: -.75rem;
+}
+
+.card__data {
+    background-color: var(--second-color);
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.card__img {
+    width: 180px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+}
+
+.card__shadow {
+    width: 200px;
+    height: 200px;
+    background-color: var(--first-color-alt);
+    border-radius: 50%;
+    position: absolute;
+    top: 3.75rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    filter: blur(45px);
+}
+
+.card__name {
+    font-size: var(--h2-font-size);
+    margin-bottom: .75rem;
+}
+
+.card__description {
+    font-weight: 500;
+    margin-bottom: 1.75rem;
+}
+
+
+@media screen and (max-width: 320px) {
+    .card__data {
+        padding: 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card__content {
+        margin-inline: 3rem;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: block;
+    }
+}
+
+/* System */
+.system-store-title a {
+    color: var(--title-system);
+}
+
+.search-address {
+    width: 50%;
+    min-width: 250px;
+    max-width: 300px;
+    height: 60px;
+    text-align: center;
+}
+
+.search-address form {
+    background: grey;
+    border-radius: 25px;
+    position: relative;
+}
+
+.search-address form>input {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 25px;
+    font-size: 14px;
+    padding: 8px 40px 8px 20px;
+    border: none;
+    box-shadow: 0 5px 8px 3px black;
+}
+
+.search-address form>input:focus {
+    outline: none;
+}
+
+.search-address form>button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background-color: none;
+    font-size: 18px;
+}
+
+.search-address form>button i {
+    color: rgb(93, 94, 95);
+}
+
+.search-address form>button:hover i {
+    color: rgb(162, 163, 163);
+}
+
+.info-store {
+    background-color: rgb(234, 157, 99);
+    box-shadow: 10px 20px 3px rgb(242, 94, 8);
+}
+
+.map-iframe {
+    width: 100%;
+    height: 100%;
+}
+
+
+.info-img img {
+    width: 10rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+@media (max-width: 576px) {
+    .info-img img {
+        width: 5rem;
+        height: 5rem;
+    }
+}
